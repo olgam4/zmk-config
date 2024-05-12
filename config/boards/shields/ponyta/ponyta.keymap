@@ -49,7 +49,7 @@
             label = "go_five_up";
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp UP>, <&kp &five_up>;,
+            bindings = <&kp UP>, <&kp &five_up>;
             mods = <(MOD_LSFT)>;
         };
     };
