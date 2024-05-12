@@ -1,0 +1,115 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  default:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - A
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LGUI}
+  - {t: G, h: LSHIFT}
+  - {t: M, h: RSHIFT}
+  - {t: N, h: RGUI}
+  - {t: E, h: RALT}
+  - {t: I, h: RCTRL}
+  - O
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - TAB
+  - lower
+  - SPACE
+  - ESC
+  - raise
+  - BSPC
+  lower:
+  - {t: '1', h: Sft+ 1}
+  - {t: '2', h: Sft+ 2}
+  - {t: '3', h: Sft+ 3}
+  - {t: '4', h: Sft+ 4}
+  - {t: '5', h: Sft+ 5}
+  - {t: '6', h: Sft+ 6}
+  - {t: '7', h: Sft+ 7}
+  - {t: '8', h: Sft+ 8}
+  - {t: '9', h: Sft+ 9}
+  - {t: '0', h: Sft+ 0}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - '{'
+  - '}'
+  - '['
+  - ']'
+  - '|'
+  - ^
+  - '&'
+  - '*'
+  - {t: '-', h: Sft+ -}
+  - {t: +, h: Sft+ +}
+  - '`'
+  - '~'
+  - (
+  - )
+  - \
+  - TAB
+  - {type: held}
+  - SPACE
+  - ''
+  - ''
+  - ''
+  raise:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&email'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - UP
+  - DOWN
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RSHIFT
+  - ''
+  - SPACE
+  - ''
+  - {type: held}
+  - ''
