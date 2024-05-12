@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-/ {
+{
     macros {
         five_up: five_up {
             compatible = "zmk,behavior-macro";
@@ -33,10 +33,6 @@
                 ;
         };
     };
-};
-
-// mod morphs
-/ {
     behaviors {
         bspdel: backspace_delete {
             label = "backspace_delete";
@@ -53,14 +49,11 @@
             mods = <(MOD_LSFT)>;
         };
     };
-};
+      keymap {
+              compatible = "zmk,keymap";
 
-/ {
-        keymap {
-                compatible = "zmk,keymap";
-
-                default {
-                        bindings = <
+              default {
+                      bindings = <
 // |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
        &kp Q        &kp W        &kp F        &kp P        &kp B                                &kp J         &kp L        &kp U        &kp Y      &kp SEMI 
 // |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
