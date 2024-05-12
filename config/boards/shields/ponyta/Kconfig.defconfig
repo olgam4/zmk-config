@@ -1,0 +1,6 @@
+if SHIELD_PONYTA
+
+config ZMK_KEYBOARD_NAME
+    default "ponyta"
+
+endif

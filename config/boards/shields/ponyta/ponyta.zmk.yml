@@ -1,0 +1,8 @@
+file_format: "1"
+id: ponyta
+name: ponyta
+type: shield
+url: https://github.com/olgam4/ponyta/
+requires: [nice_view, nice_view_adapter, nice_nano_v2]
+features:
+  - keys

@@ -1,0 +1,102 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+#pragma once
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    macros {
+        five_up: five_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp UP &kp UP &kp UP &kp UP &kp UP>;
+        };
+        email: email {
+            label = "my_email";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp O &kp L &kp I &kp V &kp I &kp E &kp R>
+                , <&macro_tap &kp AT>
+                , <&macro_tap &kp G &kp L &kp O>
+                , <&macro_tap &kp DOT>
+                , <&macro_tap &kp Q &kp U &kp E &kp B &kp E &kp C>
+                ;
+        };
+    };
+};
+
+// mod morphs
+/ {
+    behaviors {
+        bspdel: backspace_delete {
+            label = "backspace_delete";
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT)>;
+        };
+        fiveup: go_five_up {
+            label = "go_five_up";
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UP>, <&kp &five_up>;,
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default {
+                        bindings = <
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &kp Q        &kp W        &kp F        &kp P        &kp B                                &kp J         &kp L        &kp U        &kp Y      &kp SEMIT QT
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &kp A      &mt LCTRL R  &mt LALT S   &mt LGUI T  &mt LSHIFT G                         &mt RSHIFT M  &mt RGUI N   &mt RALT E   &mt RCTRL I   &kp O
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &kp Z        &kp X        &kp C        &kp D        &kp V                                &kp K         &kp H      &kp COMMA    &kp DOT      &kp FSLH
+// |------------+------------+------------+------------+-----------+----------|  |----------+------------+------------+------------+------------+------------|
+                                              &kp TAB      &mo 1     &kp SPACE     &kp ESC      &mo 2       &kp BSPC
+//                                        |------------+-----------+----------|  |----------+------------+------------|
+                        >;
+                };
+
+                lower {
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &kp N1        &kp N2      &kp N3       &kp N4      &kp N5                                &kp N6       &kp N7       &kp N8        &kp N9      &kp N0
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &kp EXCL    &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                             &kp LBRC    &kp RBRC     &kp LBKT     &kp RBKT     &kp PLUS
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+      &kp CARET    &kp AMPS     &kp STAR     &kp UNDER    &kp MINUS                            &kp GRAVE    &kp TILDE    &kp LPAR     &kp RPAR     &kp BSLH
+// |------------+------------+------------+------------+-----------+----------|  |----------+------------+------------+------------+------------+------------|
+                                              &kp TAB      &mo 1     &kp SPACE     &kp ENT      &mo 2     &kp BACKSPACE
+//                                        |------------+-----------+----------|  |----------+------------+------------|
+                };
+
+                raise {
+                        bindings = <
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+      &none         &none        &none        &none        &none                               &none         &none        &none        &none        &none
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+       &email       &none        &none        &none        &none                                &kp UP       &kp LEFT     &kp UP      &kp DOWN     &kp RIGHT
+// |------------+------------+------------+------------+-----------|                        |------------+------------+------------+------------+------------|
+      &none         &none        &none        &none        &none                               &none         &none        &none        &none        &none
+// |------------+------------+------------+------------+-----------+----------|  |----------+------------+------------+------------+------------+------------|
+                                            &kp RSHIFT     &mo 1     &kp SPACE     &kp ENT      &mo 2     &kp B
+//                                        |------------+-----------+----------|  |----------+------------+------------|
+                        >;
+                };
+        };
+};
