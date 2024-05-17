@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: olgam4
+      url-base: https://github.com/olgam4
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: olgam4
       revision: main
       import: app/west.yml
   self:
