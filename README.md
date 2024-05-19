@@ -2,6 +2,6 @@
 
 Inspired from the [Unicorne](https://github.com/fgebhart/zmk-config)
 
-![layout](https://raw.githubusercontent.com/olgam4/zmk-config/main/assets/layout.svg)
+![layout](https://github.com/olgam4/zmk-config/main/assets/layout.svg?raw=true)
 
 Rendered with [keymap-drawer](https://keymap-drawer.streamlit.app/)
