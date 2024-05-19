@@ -2,7 +2,7 @@
       #define OS_UNICODE_LEAD &macro_press &kp LALT      // macOS/Windows-Alt-Codes
 #endif
 #if !defined OS_UNICODE_TRAIL
-      #define OS_UNICODE_TRAIL &macro_press &kp LALT      // macOS/Windows-Alt-Codes
+      #define OS_UNICODE_TRAIL &macro_release &kp LALT      // macOS/Windows-Alt-Codes
 #endif
 
 #define UC_MACRO(name, unicode_bindings) \
