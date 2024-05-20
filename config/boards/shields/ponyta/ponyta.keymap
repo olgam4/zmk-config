@@ -175,9 +175,9 @@
             symbols {
                     bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &none
+          &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &none         &none         &none         &none         &none
+          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &kp GRAVE     &kp TILDE     &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE          &none         &none         &none         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
