@@ -2,3 +2,6 @@
 ZMK_UNICODE_SINGLE(tilde, N0, N0, N7,  E)
 ZMK_UNICODE_SINGLE(grave, N0, N0, N6, N0)
 ZMK_UNICODE_SINGLE(at   , N0, N0, N4, N0)
+ZMK_UNICODE_SINGLE(at   , N0, N0, N4, N0)
+
+ZMK_UNICODE_HEX(y_heart   , D, N8, N3, D, D, C, N9, B)
