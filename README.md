@@ -1,6 +1,6 @@
 # ![logo](https://github.com/olgam4/zmk-config/blob/main/assets/ponyta.gif?raw=true) Ponyta
 
-Inspired from the [Unicorne](https://github.com/fgebhart/zmk-config)
+Inspired from the [Unicorne](https://github.com/fgebhart/zmk-config) with the help of [zmk-helper](https://github.com/urob/zmk-helpers/tree/main)
 
 ![picture](https://github.com/olgam4/zmk-config/blob/main/assets/picture.jpg?raw=true)
 
