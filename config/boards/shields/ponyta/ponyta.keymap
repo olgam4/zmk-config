@@ -15,6 +15,7 @@
 #include "unicode-chars/currency.dtsi"
 #include "unicode-chars/french.dtsi"
 #include "unicode-chars/greek.dtsi"
+#include "unicode-chars/symbols.dtsi"
 
 #define DEF 0
 #define NUM 1
@@ -184,16 +185,16 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &com_semi     &dot_col       &q_scream
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
-                                      &kp RET       &mo 0         &esc_tab           SPACE_NAV     &sl SYM       &bs_del
+                                      &kp RET       &kp RET       &esc_tab           SPACE_NAV     &sl SYM       &bs_del
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                     >;
             };
             symbols {
                     bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &none
+          &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &at
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &kp GRAVE     &kp TILDE     &none         &none         &none
+          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &grave           &tilde     &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE          &none         &none         &none         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
@@ -217,9 +218,9 @@
             navigation {
                     bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &none         &kp DEL          &kp UP         &kp BSPC         &none             &none         &none         &none         &none         &none
+          &none         &kp BSPC       &kp UP         &kp DEL         &none             &none         &none         &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none         &kp RALT      &kp RGUI         &none         &none
+          &kp LSHFT     &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none         &kp RALT      &kp RGUI         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
