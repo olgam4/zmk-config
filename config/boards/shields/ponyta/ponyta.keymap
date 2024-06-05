@@ -79,6 +79,16 @@
                 , <&macro_release &kp LGUI &kp LSHFT &kp N4>
                 ;
         };
+        record: record {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT &kp N5>
+                , <&macro_release &kp LGUI &kp LSHFT &kp N5>
+                ;
+        };
     };
     behaviors {
         as: auto_shift {
@@ -234,7 +244,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &none         &none         &none         &none         &none               &none         &none         &none         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
-                                         &none         &kp RET    &screenshot         &none         &none         &none
+                                         &record     &kp RET    &screenshot         &none         &none         &none
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                     >;
             };
