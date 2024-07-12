@@ -43,11 +43,23 @@
 };
 
 #define SMART_NUM &smart_num NUM 0
+#define ENTER_SHIFT &enter_shift LSHIFT RET
 #define SPACE_NAV &space_nav NAV SPACE
 #define ESC_CHORD &esc_chord CHORD ESC
 
 / {
     macros {
+        shift_tab: shift_tab {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
         email: email {
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
@@ -176,6 +188,14 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;     
         };
+        enter_shift: enter_shift {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            bindings = <&kp>, <&kp>;
+        };
         smart_num: smart_num {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
@@ -212,7 +232,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &com_semi     &dot_col       &q_scream
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
-                                      SMART_NUM     &kp RET       ESC_CHORD          SPACE_NAV     &sl SYM       &bs_del
+                                      SMART_NUM     ENTER_SHIFT    ESC_CHORD          SPACE_NAV     &sl SYM       &bs_del
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                     >;
             };
@@ -225,7 +245,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &com_semi     &dot_col       &q_scream
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
-                                      &kp RET       &kp RET       ESC_CHORD           SPACE_NAV     &sl SYM       &bs_del
+                                      &kp RET       ENTER_SHIFT    ESC_CHORD           SPACE_NAV     &sl SYM       &bs_del
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                     >;
             };
@@ -262,7 +282,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none         &kp LCTRL     &kp LGUI         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &none         &none         &none         &none               &none         &none         &none         &none         &none
+          &none         &kp C_AC_CUT &kp C_AC_COPY &kp C_AC_PASTE &none             &none         &kp TAB      &kp LS(TAB)         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
                                          &record     &kp RET    &screenshot         &none         &none         &none
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
