@@ -49,15 +49,37 @@
 
 / {
     macros {
-        shift_tab: shift_tab {
+        cut: cut {
             compatible = "zmk,behavior-macro";
             wait-ms = <5>;
             tap-ms = <5>;
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LSHIFT>
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <5>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LGUI>
                 ;
         };
         email: email {
@@ -252,9 +274,9 @@
             symbols {
                     bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &at
+          &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &kp LS(N2)
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &grave           &tilde     &none         &none         &none
+          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &kp GRAVE      &kp LS(GRAVE)         &none         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE          &none         &none         &none         &none         &y_heart
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
@@ -282,7 +304,7 @@
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &kp LSHFT     &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none         &kp LCTRL     &kp LGUI         &none         &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &none         &kp C_AC_CUT &kp C_AC_COPY &kp C_AC_PASTE &none             &none         &kp TAB      &kp LS(TAB)         &none         &none
+          &none         &cut          &copy          &paste        &none             &none         &kp TAB      &kp LS(TAB)         &none         &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
                                          &record     &kp RET    &screenshot         &none         &none         &none
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
