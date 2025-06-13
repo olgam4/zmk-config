@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: urob
-      revision: improve-cap-words
+      revision: improve-caps-word
       import: app/west.yml
   self:
     path: config
