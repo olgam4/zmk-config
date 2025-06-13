@@ -1,11 +1,16 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
-      remote: urob
-      revision: improve-caps-word
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: zmk-num-word
+      remote: dhruvinsh
+      revision: main
   self:
     path: config
