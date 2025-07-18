@@ -3,7 +3,7 @@ ZMK_UNICODE_SINGLE(tilde, N0, N0, N7,  E)
 ZMK_UNICODE_SINGLE(grave, N0, N0, N6, N0)
 
 ZMK_UNICODE_HEX(yh,           D, N8, N3,  D,  D,  C, N9,  B)   // 💛 U+1F49B
-ZMK_UNICODE_HEX(uds,          D, N8, N3,  A,  D,  C, N9,  B)   // 🙃 U+1F643
+ZMK_UNICODE_HEX(usds,         D, N8, N3,  A,  D,  C, N9,  B)   // 🙃 U+1F643
 
 
 /*  hot U+1F975  eyes U+1F440 think U+1F914 cat smirk U+1F63C  dancing U+1F483  shrug  U+1F937 */
