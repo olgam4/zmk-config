@@ -2,14 +2,8 @@
 ZMK_UNICODE_SINGLE(tilde, N0, N0, N7,  E)
 ZMK_UNICODE_SINGLE(grave, N0, N0, N6, N0)
 
-ZMK_UNICODE_HEX(y_heart,            D, N8, N3,  D,  D,  C, N9,  B)   // 💛 U+1F49B
-//ZMK_UNICODE_HEX(upside_down_face,  N1, F, N6, N4, N3)       // 🙃 U+1F643
-//ZMK_UNICODE_HEX(overheated_face,   N1, F, N9, N7, N5)       // 🥵 U+1F975
-//ZMK_UNICODE_HEX(eyes,              N1, F, N4, N4, N0)       // 👀 U+1F440
-//ZMK_UNICODE_HEX(thinking_face,     N1, F, N9, N1, N4)       // 🤔 U+1F914
-//ZMK_UNICODE_HEX(cat_smirk,         N1, F, N6, N3, C)        // 😼 U+1F63C
-//ZMK_UNICODE_HEX(dancing,           N1, F, N4, N8, N3)       // 💃 U+1F483
-//ZMK_UNICODE_HEX(shrug,             N1, F, N9, N3, N7)       // 🤷 U+1F937
+ZMK_UNICODE_HEX(💛,           D, N8, N3,  D,  D,  C, N9,  B)   // 💛 U+1F49B
+ZMK_UNICODE_HEX(🙃,           D, N8, N3,  A,  D,  C, N9,  B)   // 🙃 U+1F643
 
 
-/*  yellow heart U+1F49B upside U+1F643 hot U+1F975  eyes U+1F440 think U+1F914 cat smirk U+1F63C  dancing U+1F483  shrug  U+1F937 */
+/*  hot U+1F975  eyes U+1F440 think U+1F914 cat smirk U+1F63C  dancing U+1F483  shrug  U+1F937 */
