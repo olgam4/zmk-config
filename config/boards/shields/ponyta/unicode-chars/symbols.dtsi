@@ -2,7 +2,7 @@
 ZMK_UNICODE_SINGLE(tilde, N0, N0, N7,  E)
 ZMK_UNICODE_SINGLE(grave, N0, N0, N6, N0)
 
-ZMK_UNICODE_HEX(yellow_heart,      N1, F, N4, N9, B)        // 💛 U+1F49B
+ZMK_UNICODE_HEX(y_heart,           N1, F, N4, N9, B)        // 💛 U+1F49B
 ZMK_UNICODE_HEX(upside_down_face,  N1, F, N6, N4, N3)       // 🙃 U+1F643
 ZMK_UNICODE_HEX(overheated_face,   N1, F, N9, N7, N5)       // 🥵 U+1F975
 ZMK_UNICODE_HEX(eyes,              N1, F, N4, N4, N0)       // 👀 U+1F440
