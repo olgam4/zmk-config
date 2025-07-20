@@ -288,9 +288,9 @@
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &kp CARET     &kp AMPS      &kp LPAR      &kp RPAR      &kp STAR          &kp DLLR      &kp HASH      &kp PRCNT     &kp FSLH      &kp LS(N2)
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &kp GRAVE      &kp LS(GRAVE)  &kp LESS_THAN &kp GREATER_THAN &none
+          &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH          &kp GRAVE      &kp LS(GRAVE)  &kp LESS_THAN &kp GREATER_THAN &yh
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE            &danc         &stars        &eyes          &usds         &yh
+          &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE            &danc         &stars        &eyes          &usds        &es_punc
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
                                       &kp CAPS       &sleep        &none             &none        &sl FRA       &bs_del
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -299,11 +299,11 @@
             francais {
                     bindings = <
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &fr_a_circumflex &none         &none         &none         &none             &none         &fr_u_circumflex &fr_e_circumflex &fr_i_circumflex &fr_o_circumflex
+          &fr_a_circumflex &none         &none         &none         &none             &none      &fr_u_circumflex &fr_e_circumflex &fr_i_circumflex &fr_o_circumflex
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &fr_a_grave      &none         &none         &sk LSHFT     &none             &none         &fr_u_grave   &fr_e_grave   &fr_i_diaeresis &none
+          &fr_a_grave      &none         &none         &sk LSHFT     &none             &none       &fr_u_grave  &fr_e_grave  &fr_i_diaeresis   &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &none         &none         &fr_c_cedilla &none         &none             &pray         &humf      &fr_e_acute   &fr_e_diaeresis &fr_oe
+             &none         &none         &fr_c_cedilla &none         &humf             &pray       &es_n_tilde  &fr_e_acute  &fr_e_diaeresis   &fr_oe
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
                                          &none         &none         &none             &none         &none         &bs_del
      //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -314,7 +314,7 @@
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &none         &kp BSPC       &kp UP         &kp DEL         &none           &none     &kp C_BRI_DN    &kp C_BRI_UP   &kp K_VOL_DN &kp K_VOL_UP
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          &kp LSHFT     &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none         &kp LCTRL     &kp LGUI         &none       &none
+          &kp LSHFT     &kp LEFT      &kp DOWN         &kp RIGHT    &none             &none       &kp LCTRL     &kp LGUI         &none       &none
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
           &all         &cut          &copy          &paste        &none             &none         &kp TAB      &kp LS(TAB)     &bt BT_CLR      &none
      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴-────────────╯
