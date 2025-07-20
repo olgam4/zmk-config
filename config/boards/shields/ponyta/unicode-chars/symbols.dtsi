@@ -2,7 +2,7 @@
 ZMK_UNICODE_SINGLE(tilde, N0, N0, N7,  E) // ~
 ZMK_UNICODE_SINGLE(grave, N0, N0, N6, N0) // `
 
-ZMK_UNICODE_PAIR(es_punc,   N0, N0, B , F ,   N0, N0, A , N1) // ¡/¿
+ZMK_UNICODE_PAIR(es_punc,   N0, N0, B , F ,   N0, N0, A , N1) // ¿/¡
 
 ZMK_UNICODE_HEX(yh,         D , N8, N3, D , D , C , N9, B)    // 💛
 ZMK_UNICODE_HEX(usds,       D , N8, N3, D , D , E , N4, N3)   // 🙃
