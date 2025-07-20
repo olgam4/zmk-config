@@ -15,6 +15,7 @@
 #include "unicode-chars/base.h"
 #include "unicode-chars/currency.dtsi"
 #include "unicode-chars/french.dtsi"
+#include "unicode-chars/spanish.dtsi"
 #include "unicode-chars/greek.dtsi"
 #include "unicode-chars/symbols.dtsi"
 
