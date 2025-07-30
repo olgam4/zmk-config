@@ -15,4 +15,4 @@ ZMK_UNICODE_PAIR(fr_u_grave,        N0, N0, F, N9,   N0, N0, D, N9)  // ù/Ù
 ZMK_UNICODE_PAIR(fr_u_circumflex,   N0, N0, F, B,    N0, N0, D, B)   // û/Û
 ZMK_UNICODE_PAIR(fr_u_diaeresis,    N0, N0, F, C,    N0, N0, D, C)   // ü/Ü
 ZMK_UNICODE_PAIR(fr_y_diaeresis,    N0, N0, F, F,    N0, N1, N7, N8) // ÿ/Ÿ
-
+ZMK_UNICODE_PAIR(fr_quotes,    N0, N0, A, B,    N0, N0, B, B)   // «/»
